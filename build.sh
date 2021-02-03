@@ -21,8 +21,11 @@ wget $TMUX_SRC_URL -O $TMUX_SRC.tar.gz
 wget $NCURSES_SRC_URL -O $NCURSES_SRC.tar.gz
 wget $LIBEVENT_SRC_URL -O $LIBEVENT_SRC.tar.gz
 
+mkdir $TMUX_SRC
 tar xzvf $TMUX_SRC.tar.gz -C $TMUX_SRC --strip-components 1
+mkdir $NCURSES_SRC
 tar xzvf $NCURSES_SRC.tar.gz -C $NCURSES_SRC --strip-components 1
+mkdir $LIBEVENT_SRC
 tar xzvf $LIBEVENT_SRC.tar.gz -C $LIBEVENT_SRC --strip-components 1
 
 #install libevent
