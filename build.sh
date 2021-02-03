@@ -23,7 +23,7 @@ cd $ROOT
 
 #install libevent
 cd $LIBEVENT_SRC
-$(./configure --prefix=$HOME/local)
+$(./configure --prefix=$HOME/local --disable-openssl)
 make && make install
 cd $ROOT
 
