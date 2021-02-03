@@ -42,7 +42,7 @@ cd $ROOT
 
 #install tmux
 cd $TMUX_SRC
-export PKG_CONFIG_PATH="${HOME}/local/lib/pkgconfig"
-$(./configure --prefix=$HOME/app LDFLAGS="-L$HOME/app/lib" CFLAGS="-I$HOME/app/include")
+export PKG_CONFIG_PATH="$HOME/local/lib/pkgconfig"
+$(./configure --prefix=$HOME/local LDFLAGS="-L$HOME/local/lib" CFLAGS="-I$HOME/local/include")
 make && make install
 cd $ROOT
