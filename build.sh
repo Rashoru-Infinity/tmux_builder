@@ -29,7 +29,7 @@ cd $ROOT
 
 #install ncurses
 cd $NCURSES_SRC
-$(./configure --enable-pc-files --prefix=${HOME}/local --with-pkg-config-libdir=${HOME}/local/lib/pkgconfig --with-termlib)
+$(./configure --enable-pc-files --prefix=$HOME/local --with-pkg-config-libdir=$HOME/local/lib/pkgconfig --with-termlib)
 make && make install
 cd $ROOT
 
