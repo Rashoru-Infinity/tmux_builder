@@ -36,13 +36,13 @@ cd $ROOT
 
 #install ncurses
 cd $NCURSES_SRC
-$(./configure --enable-pc-files --prefix=$HOME/local --with-pkg-config-libdir=$HOME/local/lib/lib/pkgconfig --with-termlib)
+$(./configure --enable-pc-files --prefix=${HOME}/local --with-pkg-config-libdir=${HOME}/local/lib/pkgconfig --with-termlib)
 make && make install
 cd $ROOT
 
 #install tmux
 cd $TMUX_SRC
 export PKG_CONFIG_PATH="$HOME/local/lib/pkgconfig"
-$(./configure --prefix=$HOME/local LDFLAGS="-L$HOME/local/lib" CFLAGS="-I$HOME/local/include")
+$(./configure --prefix=$HOME/local)
 make && make install
 cd $ROOT
