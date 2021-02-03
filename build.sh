@@ -3,30 +3,23 @@
 ROOT=$HOME/local
 
 TMUX_SRC=tmux
-TMUX_SRC_URL=https://github.com/tmux/tmux/releases/download/3.1c/tmux-3.1c.tar.gz
 
 NCURSES_SRC=ncurses
-NCURSES_SRC_URL=https://invisible-mirror.net/archives/ncurses/ncurses-6.2.tar.gz
 
 LIBEVENT_SRC=libevent
-LIBEVENT_SRC_URL=https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
 
 mkdir $ROOT
 
+#unzip srcs
+
+mkdir $ROOT/$TMUX_SRC
+tar xzvf $TMUX_SRC.tar.gz -C $ROOT/$TMUX_SRC --strip-components 1
+mkdir $ROOT/$NCURSES_SRC
+tar xzvf $NCURSES_SRC.tar.gz -C $ROOT/$NCURSES_SRC --strip-components 1
+mkdir $ROOT/$LIBEVENT_SRC
+tar xzvf $LIBEVENT_SRC.tar.gz -C $ROOT/$LIBEVENT_SRC --strip-components 1
+
 cd $ROOT
-
-#download & unzip srcs
-
-wget $TMUX_SRC_URL -O $TMUX_SRC.tar.gz
-wget $NCURSES_SRC_URL -O $NCURSES_SRC.tar.gz
-wget $LIBEVENT_SRC_URL -O $LIBEVENT_SRC.tar.gz
-
-mkdir $TMUX_SRC
-tar xzvf $TMUX_SRC.tar.gz -C $TMUX_SRC --strip-components 1
-mkdir $NCURSES_SRC
-tar xzvf $NCURSES_SRC.tar.gz -C $NCURSES_SRC --strip-components 1
-mkdir $LIBEVENT_SRC
-tar xzvf $LIBEVENT_SRC.tar.gz -C $LIBEVENT_SRC --strip-components 1
 
 #install libevent
 cd $LIBEVENT_SRC
