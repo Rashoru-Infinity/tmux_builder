@@ -1,15 +1,15 @@
 #!/bin/bash
 
-ROOT = $HOME/local
+ROOT=$HOME/local
 
-TMUX_SRC = tmux
-TMUX_SRC_URL = https://github.com/tmux/tmux/releases/download/3.1c/tmux-3.1c.tar.gz
+TMUX_SRC=tmux
+TMUX_SRC_URL=https://github.com/tmux/tmux/releases/download/3.1c/tmux-3.1c.tar.gz
 
-NCURSES_SRC = ncurses
-NCURSES_SRC_URL = https://invisible-mirror.net/archives/ncurses/ncurses-6.2.tar.gz
+NCURSES_SRC=ncurses
+NCURSES_SRC_URL=https://invisible-mirror.net/archives/ncurses/ncurses-6.2.tar.gz
 
-LIBEVENT_SRC = libevent
-LIBEVENT_SRC_URL = https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
+LIBEVENT_SRC=libevent
+LIBEVENT_SRC_URL=https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
 
 mkdir $ROOT
 
