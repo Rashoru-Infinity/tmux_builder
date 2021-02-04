@@ -1,12 +1,12 @@
 # tmux_builder
 Allows you to use tmux in an environment where you do not have administrator privileges and cannot "apt install tmux".  
-It doesn't work depending on the environment, but it worked fine on my university server.  
-
+I confirmed that it works on my university server.  
 # Requirement
 - gcc
 - make
-- python
-
+- python  
+  
+Since the software that is available varies depending on the environment, please prepare the necessary software as appropriate.  
 # Installation
 After cloning this repository ...  
 ```
@@ -24,10 +24,10 @@ export LD_LIBRARY_PATH="$HOME/local/lib"
 setenv PATH ${PATH}:${HOME}/local/bin
 setenv LD_LIBRARY_PATH ${HOME}/local/lib
 ```
-- zshrc 
+- zsh  
 ```
 export PATH=$PATH:$HOME/local/bin
-export LD_LIBRARY_PATH $HOME/local/lib
+export LD_LIBRARY_PATH=$HOME/local/lib
 ```
 Finally, Reflect changes.
 ```
