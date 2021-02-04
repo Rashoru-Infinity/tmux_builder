@@ -1,6 +1,11 @@
 # tmux_builder
 Allows you to use tmux in an environment where you do not have administrator privileges and cannot "apt install tmux".  
-I confirmed that it works on my university server.  
+I confirmed that it works on my university server and guacamole in 42tokyo.  
+- 42  
+<https://www.42.fr/>  
+<https://42tokyo.jp/>
+- guacamole(Only available to students enrolled in 42tokyo)  
+<https://guacamole.42tokyo.jp/>
 # Requirement
 - gcc
 - make
