@@ -15,7 +15,7 @@ I confirmed that it works on my university server and guacamole in 42tokyo.
 Since the software that is available varies depending on the environment, please prepare the necessary software as appropriate.  
 # Installation(tmux)
 Check if pkg-config is available.  
-See [Installation(pkg-config)](#installation\(pkg-config\)) if it is not available.  
+See [Installation(pkg-config)](#installationpkg-config) if it is not available.  
 After cloning this repository ...  
 ```
 cd tmux_builder
