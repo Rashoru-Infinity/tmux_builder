@@ -51,7 +51,7 @@ make install
 Next, add the following command to your $HOME/.xxxrc.  
 - bash or zsh
 ```
-export LD_LIBRARY_PATH="HOME/local/lib"
+export LD_LIBRARY_PATH="$HOME/local/lib"
 ```
 - csh
 ```
