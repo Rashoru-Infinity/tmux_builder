@@ -34,6 +34,10 @@ Finally, Reflect changes.
 source $HOME/.xxxrc
 ```
 # Version
-- tmux 3.1c
-- ncurses 6.2
-- libevent 2.1.12-stable
+- tmux 3.1c  
+<https://github.com/tmux/tmux/releases/tag/3.1c>
+- ncurses 6.2  
+<https://invisible-mirror.net/archives/ncurses/>  
+<https://invisible-mirror.net/archives/ncurses/ncurses-6.2.tar.gz>
+- libevent 2.1.12-stable  
+<https://github.com/libevent/libevent/releases/tag/release-2.1.12-stable>
