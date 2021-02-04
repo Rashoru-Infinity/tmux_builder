@@ -14,6 +14,8 @@ I confirmed that it works on my university server and guacamole in 42tokyo.
   
 Since the software that is available varies depending on the environment, please prepare the necessary software as appropriate.  
 # Installation(tmux)
+Check if pkg-config is available.  
+See [Installation(pkg-config)](#installation(pkg-config)) if it is not available.  
 After cloning this repository ...  
 ```
 cd tmux_builder
@@ -34,7 +36,7 @@ Finally, Reflect changes.
 ```
 source $HOME/.xxxrc
 ```
-# installation(pkg-config)
+# Installation(pkg-config)
 If pkg-config is not installed, you need to install pkg-config.  
 If you have permission to install pkg-config, you can use "apt install", but if not, you need to install it locally.  
 Below are the steps to install pkg-config locally.  
