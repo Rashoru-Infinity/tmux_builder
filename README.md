@@ -4,7 +4,7 @@ I confirmed that it works on my university server.
 # Requirement
 - gcc
 - make
-- python  
+- pkg-config
   
 Since the software that is available varies depending on the environment, please prepare the necessary software as appropriate.  
 # Installation
