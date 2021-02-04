@@ -4,17 +4,18 @@ I confirmed that it works on my university server.
 # Requirement
 - gcc
 - make
-- pkg-config
+- pkg-config  
+<https://pkg-config.freedesktop.org/releases/>
   
 Since the software that is available varies depending on the environment, please prepare the necessary software as appropriate.  
-# Installation
+# Installation(tmux)
 After cloning this repository ...  
 ```
 cd tmux_builder
 bash build.sh
 ```
 Next, add the following command to your $HOME/.xxxrc.  
-- bash
+- bash or zsh
 ```
 export PATH="$PATH:$HOME/local/bin"
 export LD_LIBRARY_PATH="$HOME/local/lib"
@@ -24,10 +25,30 @@ export LD_LIBRARY_PATH="$HOME/local/lib"
 setenv PATH ${PATH}:${HOME}/local/bin
 setenv LD_LIBRARY_PATH ${HOME}/local/lib
 ```
-- zsh  
+Finally, Reflect changes.
 ```
-export PATH=$PATH:$HOME/local/bin
-export LD_LIBRARY_PATH=$HOME/local/lib
+source $HOME/.xxxrc
+```
+# installation(pkg-config)
+If pkg-config is not installed, you need to install pkg-config.  
+If you have permission to install pkg-config, you can use "apt install", but if not, you need to install it locally.  
+Below are the steps to install pkg-config locally.  
+After downloading pkg-config-x.x.x.tar.gz file ...  
+```
+tar xzf pkg-config-x.x.x.tar.gz
+cd pkg-config-x.x.x
+./configure --prefix=$HOME/local --with-internal-glib
+make
+make install
+```
+Next, add the following command to your $HOME/.xxxrc.  
+- bash or zsh
+```
+export LD_LIBRARY_PATH="HOME/local/lib"
+```
+- csh
+```
+setenv LD_LIBRARY ${HOME}/local/lib
 ```
 Finally, Reflect changes.
 ```
