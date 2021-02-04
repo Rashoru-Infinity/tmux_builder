@@ -33,3 +33,7 @@ Finally, Reflect changes.
 ```
 source $HOME/.xxxrc
 ```
+# Version
+- tmux 3.1c
+- ncurses 6.2
+- libevent 2.1.12-stable
