@@ -38,6 +38,7 @@ source $HOME/.xxxrc
 If pkg-config is not installed, you need to install pkg-config.  
 If you have permission to install pkg-config, you can use "apt install", but if not, you need to install it locally.  
 Below are the steps to install pkg-config locally.  
+[Download pkg-config](https://pkg-config.freedesktop.org/releases/)  
 After downloading pkg-config-x.x.x.tar.gz file ...  
 ```
 tar xzf pkg-config-x.x.x.tar.gz
